@@ -1,0 +1,3151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>insertionTuples</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/04/01 20:01:25.462</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/04/01 20:01:25.462</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>base_world_connection</name>
+    <server />
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>base_world</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>world_connection</name>
+    <server />
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>world</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Extraction depuis fichier fertility_output</from>
+      <to>Normalisation</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis fichier population</from>
+      <to>Normalisation population</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Normalisation population</from>
+      <to>Trouver idAnnee Population</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Trouver idAnnee Population</from>
+      <to>Filtrage pays cibles Population</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis fichier CSV life expectancy</from>
+      <to>Normalisation 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Normalisation 2</from>
+      <to>Trouver idAnnee Life</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Trouver idAnnee Life</from>
+      <to>Filtrage pays cibles Life</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Normalisation</from>
+      <to>Trouver idAnnee Fertility</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Trouver idAnnee Fertility</from>
+      <to>Filtrage pays cibles Fertility</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis fichier GDP</from>
+      <to>Filtrage measure</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage measure</from>
+      <to>Normalisation GDP</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Normalisation GDP</from>
+      <to>Trouver idAnnee GDP</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Trouver idAnnee GDP</from>
+      <to>Filtrage pays cibles GDP</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage pays cibles</from>
+      <to>Insertion tuples Country</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis fichier latitude_longitude</from>
+      <to>nettoyage colonnes</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>nettoyage colonnes</from>
+      <to>Filtrage europe</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage pays cibles Life</from>
+      <to>Insertion tuples Life</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage pays cibles Population</from>
+      <to>Insertion tuples Population</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table</from>
+      <to>Filtrage pays cibles</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage pays cibles GDP</from>
+      <to>Insertion tuples GDP</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage europe</from>
+      <to>Mise à jour Country</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtrage pays cibles Fertility</from>
+      <to>Insertion tuples Fertility</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Trouver idAnnee Population</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>idTemps</field_name>
+      <formula_string>if ( [Année] = 2006 ; 1 ; if ( [Année] = 2007 ; 2 ; if ([Année] = 2008 ; 3 ; if ([Année] = 2009 ; 4 ; if ([Année] = 2010 ; 5 ; if ([Année] = 2011 ; 6 ; if ([Année] = 2012 ; 7 ; if ([Année] = 2013 ; 8 ; if ([Année] = 2014 ; 9 ; if ([Année] = 2015 ; 10 ; if ([Année] = 2016 ; 11 ) ) ) ) ) ) ) ) ) ) ) 
+</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>696</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Trouver idAnnee Life</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>idTemps</field_name>
+      <formula_string>if ( [Année] = 2006 ; 1 ; if ( [Année] = 2007 ; 2 ; if ([Année] = 2008 ; 3 ; if ([Année] = 2009 ; 4 ; if ([Année] = 2010 ; 5 ; if ([Année] = 2011 ; 6 ; if ([Année] = 2012 ; 7 ; if ([Année] = 2013 ; 8 ; if ([Année] = 2014 ; 9 ; if ([Année] = 2015 ; 10 ; if ([Année] = 2016 ; 11 ) ) ) ) ) ) ) ) ) ) ) 
+</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Trouver idAnnee Fertility</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>idTemps</field_name>
+      <formula_string>if ( [Année] = 2006 ; 1 ; if ( [Année] = 2007 ; 2 ; if ([Année] = 2008 ; 3 ; if ([Année] = 2009 ; 4 ; if ([Année] = 2010 ; 5 ; if ([Année] = 2011 ; 6 ; if ([Année] = 2012 ; 7 ; if ([Année] = 2013 ; 8 ; if ([Année] = 2014 ; 9 ; if ([Année] = 2015 ; 10 ; if ([Année] = 2016 ; 11 ) ) ) ) ) ) ) ) ) ) ) 
+</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Trouver idAnnee GDP</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>idTemps</field_name>
+      <formula_string>if ( [Année] = 2006 ; 1 ; if ( [Année] = 2007 ; 2 ; if ([Année] = 2008 ; 3 ; if ([Année] = 2009 ; 4 ; if ([Année] = 2010 ; 5 ; if ([Année] = 2011 ; 6 ; if ([Année] = 2012 ; 7 ; if ([Année] = 2013 ; 8 ; if ([Année] = 2014 ; 9 ; if ([Année] = 2015 ; 10 ; if ([Année] = 2016 ; 11 ) ) ) ) ) ) ) ) ) ) ) 
+</formula_string>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis fichier CSV life expectancy</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/users/Etu2/3871772/Documents/m1/s2/BIUM/projet/outputs/life_expectancy_output.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>﻿Country Name</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>52</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2006</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2007</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2008</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2009</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2010</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2011</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2012</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2013</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2014</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2015</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2016</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis fichier GDP</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/users/Etu2/3871772/Documents/m1/s2/BIUM/projet/outputs/gdp_output.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>﻿LOCATION</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>7</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2006</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2007</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2008</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2009</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2010</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2011</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2012</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2013</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2014</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2015</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2016</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis fichier fertility_output</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/users/Etu2/3871772/Documents/m1/s2/BIUM/projet/outputs/fertility_output.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>﻿Country Name</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>45</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2006</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2007</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2008</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2009</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2010</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2011</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2012</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2013</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2014</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2015</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2016</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis fichier latitude_longitude</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/users/nfs/Etu2/3871772/Documents/m1/s2/BIUM/projet/data/average-latitude-longitude-countries.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure />
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ISOCountryCode</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Country</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>48</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Latitude</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>33</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Longitude</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>8</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis fichier population</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/users/Etu2/3871772/Documents/m1/s2/BIUM/projet/outputs/population_output.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>Country Name</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>52</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <type>String</type>
+        <format />
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2016</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2015</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2014</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2013</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2012</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2011</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2010</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2009</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2008</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2007</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>2006</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage europe</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>new_countryName</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Austria;Bulgaria;Switzerland;Czech Republic;Germany;Spain;Estonia;France;United Kingdom;Greece;Croatia;Hungary;Ireland;Iceland;Italy;Lithuania;Luxembourg;Malta;Netherlands;Norway;Poland;Portugal;Russian Federation;Slovakia;Slovenia;Sweden;</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage pays cibles Population</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Insertion tuples Population</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>Country Code_1</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>AUT;CZE;FRA;DEU;GRC;HUN;ISL;IRL;ITA;LUX;NLD;NOR;POL;PRT;SVK;ESP;SWE;CHE;GBR;EST;RUS;SVN;LTU;BGR;HRV;MLT  </text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage pays cibles Life</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>Country Code_1</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>AUT;CZE;FRA;DEU;GRC;HUN;ISL;IRL;ITA;LUX;NLD;NOR;POL;PRT;SVK;ESP;SWE;CHE;GBR;EST;RUS;SVN;LTU;BGR;HRV;MLT  </text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage pays cibles Fertility</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>CountryCode</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>AUT;CZE;FRA;DEU;GRC;HUN;ISL;IRL;ITA;LUX;NLD;NOR;POL;PRT;SVK;ESP;SWE;CHE;GBR;EST;RUS;SVN;LTU;BGR;HRV;MLT  </text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage pays cibles</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>Code</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>AUT; BEL;CZE; DNK; FIN;FRA;DEU;GRC;HUN;ISL;IRL;ITA;LUX;NLD;NOR;POL;PRT;SVK;ESP;SWE;CHE;TUR;GBR;EST;RUS;SVN;LTU;BGR;HRV;CYP;MLT;ROU  </text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage pays cibles GDP</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>Country Code</leftvalue>
+        <function>IN LIST</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>AUT;CZE;FRA;DEU;GRC;HUN;ISL;IRL;ITA;LUX;NLD;NOR;POL;PRT;SVK;ESP;SWE;CHE;GBR;EST;RUS;SVN;LTU;BGR;HRV;MLT  </text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filtrage measure</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>MEASURE</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>MLN_USD</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion tuples Country</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>Country</table>
+      <key>
+        <name>Code</name>
+        <field>countryCode</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>Name</name>
+        <field>countryName</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>countryCode</name>
+        <rename>Code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryName</name>
+        <rename>Name</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>616</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Normalisation</name>
+    <type>Normaliser</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <typefield>Année</typefield>
+    <fields>
+      <field>
+        <name>Country Code</name>
+        <value>2006</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2006</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2006</name>
+        <value>2006</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2007</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2007</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2007</name>
+        <value>2007</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2008</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2008</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2008</name>
+        <value>2008</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2009</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2009</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2009</name>
+        <value>2009</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2010</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2010</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2010</name>
+        <value>2010</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2011</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2011</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2011</name>
+        <value>2011</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2012</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2012</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2012</name>
+        <value>2012</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2013</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2013</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2013</name>
+        <value>2013</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2014</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2014</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2014</name>
+        <value>2014</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2015</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2015</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2015</name>
+        <value>2015</value>
+        <norm>Fertility</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2016</value>
+        <norm>CountryCode</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2016</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2016</name>
+        <value>2016</value>
+        <norm>Fertility</norm>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Normalisation 2</name>
+    <type>Normaliser</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <typefield>Année</typefield>
+    <fields>
+      <field>
+        <name>Country Code</name>
+        <value>2006</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2006</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2006</name>
+        <value>2006</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2007</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2007</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2007</name>
+        <value>2007</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2008</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2008</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2008</name>
+        <value>2008</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2009</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2009</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2009</name>
+        <value>2009</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2010</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2010</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2010</name>
+        <value>2010</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2011</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2011</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2011</name>
+        <value>2011</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2012</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2012</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2012</name>
+        <value>2012</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2013</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2013</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2013</name>
+        <value>2013</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2014</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2014</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2014</name>
+        <value>2014</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2015</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2015</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2015</name>
+        <value>2015</value>
+        <norm>Life Expectancy</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2016</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>﻿Country Name</name>
+        <value>2016</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2016</name>
+        <value>2016</value>
+        <norm>Life Expectancy</norm>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Normalisation GDP</name>
+    <type>Normaliser</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <typefield>Année</typefield>
+    <fields>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2006</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2006</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2006</name>
+        <value>2006</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2007</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2007</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2007</name>
+        <value>2007</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2008</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2008</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2008</name>
+        <value>2008</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2009</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2009</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2009</name>
+        <value>2009</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2010</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2010</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2010</name>
+        <value>2010</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2011</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2011</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2011</name>
+        <value>2011</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2012</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2012</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2012</name>
+        <value>2012</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2013</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2013</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2013</name>
+        <value>2013</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2014</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2014</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2014</name>
+        <value>2014</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2015</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2015</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2015</name>
+        <value>2015</value>
+        <norm>Gdp</norm>
+      </field>
+      <field>
+        <name>﻿LOCATION</name>
+        <value>2016</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>MEASURE</name>
+        <value>2016</value>
+        <norm>Measure</norm>
+      </field>
+      <field>
+        <name>2016</name>
+        <value>2016</value>
+        <norm>Gdp</norm>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Normalisation population</name>
+    <type>Normaliser</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <typefield>Année</typefield>
+    <fields>
+      <field>
+        <name>Country Code</name>
+        <value>2006</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2006</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2006</name>
+        <value>2006</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2007</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2007</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2007</name>
+        <value>2007</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2008</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2008</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2008</name>
+        <value>2008</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2009</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2009</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2009</name>
+        <value>2009</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2010</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2010</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2010</name>
+        <value>2010</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2011</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2011</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2011</name>
+        <value>2011</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2012</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2012</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2012</name>
+        <value>2012</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2013</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2013</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2013</name>
+        <value>2013</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2014</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2014</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2014</name>
+        <value>2014</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2015</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2015</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2015</name>
+        <value>2015</value>
+        <norm>Population</norm>
+      </field>
+      <field>
+        <name>Country Code</name>
+        <value>2016</value>
+        <norm>Country Code</norm>
+      </field>
+      <field>
+        <name>Country Name</name>
+        <value>2016</value>
+        <norm>Country Name</norm>
+      </field>
+      <field>
+        <name>2016</name>
+        <value>2016</value>
+        <norm>Population</norm>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>nettoyage colonnes</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>new_Longitude</field_name>
+      <formula_string>LEFT([Longitude];LEN([Longitude])-1)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>new_countryName</field_name>
+      <formula_string>MID([Country];3;LEN([Country])-4)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>new_countryCode</field_name>
+      <formula_string>MID([ISOCountryCode];2;Len([ISOCountryCode]-1))</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion tuples Life</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>Life</table>
+      <key>
+        <name>Country Code_1</name>
+        <field>countryCode</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>idTemps</name>
+        <field>idTemps</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>Country Name</name>
+        <field>countryName</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>Life Expectancy</name>
+        <field>LifeExpectancy</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>idTemps</name>
+        <rename>idTemps</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryCode</name>
+        <rename>Country Code_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryName</name>
+        <rename>Country Name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>LifeExpectancy</name>
+        <rename>Life Expectancy</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1008</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion tuples Population</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>Population</table>
+      <key>
+        <name>idTemps</name>
+        <field>idTemps</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>Country Code_1</name>
+        <field>countryCode</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>Population</name>
+        <field>nbHabitants</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>idTemps</name>
+        <rename>idTemps</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryCode</name>
+        <rename>Country Code_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nbHabitants</name>
+        <rename>Population</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>world_connection</connection>
+    <sql>SELECT Code,Name  FROM country WHERE Continent = "Europe";</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion tuples GDP</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>GDP</table>
+      <key>
+        <name>Country Code</name>
+        <field>countryCode</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>idTemps</name>
+        <field>idTemps</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>measure</name>
+        <rename>Measure_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>gdp</name>
+        <rename>Gdp</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>idTemps</name>
+        <rename>idTemps</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryCode</name>
+        <rename>Country Code</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1072</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Mise à jour Country</name>
+    <type>Update</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <skip_lookup>N</skip_lookup>
+    <commit>100</commit>
+    <use_batch>N</use_batch>
+    <error_ignored>N</error_ignored>
+    <ignore_flag_field />
+    <lookup>
+      <schema />
+      <table>Country</table>
+      <key>
+        <name>new_countryName</name>
+        <field>countryName</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>Latitude</name>
+        <rename>Latitude</rename>
+      </value>
+      <value>
+        <name>longitude</name>
+        <rename>new_Longitude</rename>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion tuples Fertility</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>base_world_connection</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>Fertility</table>
+      <key>
+        <name>idTemps</name>
+        <field>idTemps</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>CountryCode</name>
+        <field>countryCode</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>countryCode</name>
+        <rename>CountryCode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>idTemps</name>
+        <rename>idTemps</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>countryName</name>
+        <rename>Country Name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fertilityRate</name>
+        <rename>Fertility</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1024</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes />
+</transformation>
